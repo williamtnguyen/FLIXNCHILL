@@ -27,6 +27,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         
         tableView.dataSource = self
         tableView.rowHeight = 200
+        //tableView.estimatedRowHeight = 200
         fetchMovies()
     }
     
