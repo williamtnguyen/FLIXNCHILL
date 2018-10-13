@@ -157,10 +157,14 @@ Please list two areas of the assignment you'd like to **discuss further with you
 Here's a walkthrough of implemented user stories:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <img src='https://i.imgur.com/GlUuwrC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 =======
 <img src='https://i.imgur.com/naQQjbS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 >>>>>>> 65709d02de23649e6dd1f716ef6fb6a46d0cdf0a
+=======
+<img src='https://i.imgur.com/GlUuwrC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+>>>>>>> 90a4b26645a1e4c18031632fd49d787b037a0096
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
