@@ -45,7 +45,7 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
     
     func fetchMovies() {
         
-        MovieApiManager().superheroMovies { (movies: [Movie]?, error: Error?) in
+        MovieApiManager().nowPlayingMovies { (movies: [Movie]?, error: Error?) in
             if let movies = movies {
                 self.movies = movies
                 self.collectionView.reloadData()

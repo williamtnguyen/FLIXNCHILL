@@ -25,7 +25,7 @@
                             </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aST-Jw-i0J">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.0" blue="0.19755006950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="194" id="0H2-9w-0KP" customClass="MovieCell" customModule="Flix" customModuleProvider="target">
@@ -141,6 +141,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.85294555179999998" green="0.43565772330000002" blue="0.4272761914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ypg-JL-x8p"/>
                     </view>
                     <connections>
@@ -164,7 +165,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Swj-4G-91n">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="tintColor" red="0.85294555179999998" green="0.43565772330000002" blue="0.4272761914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.85294555179999998" green="0.43565772330000002" blue="0.4272761914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -194,6 +199,7 @@
                                 <rect key="frame" x="164" y="359" width="52" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="0.85294555179999998" green="0.43565772330000002" blue="0.4272761914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="onSignIn:" destination="S5s-qo-KdQ" eventType="touchUpInside" id="p49-qw-s2H"/>
@@ -203,6 +209,7 @@
                                 <rect key="frame" x="158" y="414" width="61" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="0.85294555179999998" green="0.43565772330000002" blue="0.4272761914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="onSignUp:" destination="S5s-qo-KdQ" eventType="touchUpInside" id="PDe-3n-pwq"/>
@@ -256,7 +263,7 @@
             </objects>
             <point key="canvasLocation" x="242" y="117"/>
         </scene>
-        <!--Movie Flow-->
+        <!--Popular Movies-->
         <scene sceneID="dlL-s1-3ad">
             <objects>
                 <viewController id="L59-em-d3F" customClass="SuperheroViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
@@ -299,7 +306,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IIk-OQ-Zkd"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Movie Flow" id="DrN-di-7n2"/>
+                    <navigationItem key="navigationItem" title="Popular Movies" id="DrN-di-7n2"/>
                     <connections>
                         <outlet property="collectionView" destination="911-qc-Esh" id="5PN-Mk-paB"/>
                     </connections>
@@ -308,16 +315,19 @@
             </objects>
             <point key="canvasLocation" x="1068" y="902"/>
         </scene>
-        <!--Movie Flow-->
+        <!--Popular Movies-->
         <scene sceneID="3pj-Tf-EDd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IqY-cZ-Eda" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Movie Flow" image="superhero_tabbar_item" id="ejj-Yu-GCU"/>
+                    <tabBarItem key="tabBarItem" title="Popular Movies" image="reel_tabbar_icon" id="ejj-Yu-GCU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hBs-dz-7dv">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.85294555179999998" green="0.43565772330000002" blue="0.4272761914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -331,9 +341,9 @@
     </scenes>
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
-        <image name="superhero_tabbar_item" width="21" height="23"/>
+        <image name="reel_tabbar_icon" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dzj-XD-6u6"/>
+        <segue reference="lwP-5D-kF7"/>
     </inferredMetricsTieBreakers>
 </document>
