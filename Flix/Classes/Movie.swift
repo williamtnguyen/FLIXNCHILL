@@ -16,7 +16,7 @@ class Movie {
     var backdropURL: URL!
     
     init(dictionary: [String: Any]) {
-        title = dictionary["title"] as! String //?? "No title"
+        title = dictionary["title"] as? String ?? "No title"
         overview = dictionary["overview"] as? String ?? "No overview"
         releaseDate = dictionary["release_date"] as? String ?? "No release date"
         
