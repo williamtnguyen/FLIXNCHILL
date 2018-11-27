@@ -139,6 +139,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvo-F9-Ylb">
+                                <rect key="frame" x="207" y="405" width="152" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Showtimes &amp; Tickets"/>
+                                <connections>
+                                    <segue destination="Uiv-Ge-mBb" kind="show" id="9NW-4d-Hjp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <color key="tintColor" red="0.85294555179999998" green="0.43565772330000002" blue="0.4272761914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -155,6 +164,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yek-Wq-VVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2687.1999999999998" y="117.39130434782609"/>
+        </scene>
+        <!--Showtimes-->
+        <scene sceneID="m1C-AQ-kb0">
+            <objects>
+                <viewController id="Uiv-Ge-mBb" customClass="FandangoViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CyJ-7r-TeC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stj-gj-8ib">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iz6-rc-XzF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Showtimes" id="Cdc-PL-3b3"/>
+                    <connections>
+                        <outlet property="myWebView" destination="stj-gj-8ib" id="OHU-dV-mPp"/>
+                        <outlet property="navBar" destination="Cdc-PL-3b3" id="zGy-YG-ovF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NF1-8x-7Ld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3468" y="116"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="aEp-b6-2IC">
@@ -324,6 +364,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hBs-dz-7dv">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.85294555179999998" green="0.43565772330000002" blue="0.4272761914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" red="0.85294555179999998" green="0.43565772330000002" blue="0.4272761914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

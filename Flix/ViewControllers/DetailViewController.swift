@@ -16,6 +16,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
+   
     
     var movie: Movie!
     
@@ -23,7 +24,8 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.tabBarController?.tabBar.isHidden = true
         if let movie = movie {
             titleLabel.text = movie.title
             releaseDateLabel.text = movie.releaseDate
@@ -37,6 +39,18 @@ class DetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let FandangoViewController = segue.destination as! FandangoViewController;
+        FandangoViewController.navTitle = "Showtimes & Tickets"
+        let movieTitle = movie.title
+        if movieTitle != "" {
+            FandangoViewController.movieTitle = movieTitle ?? "No title" }
+            //FandangoViewController.movieIMDBid = movie!["imdb_id"]! as! String;
     }
     
 
