@@ -9,7 +9,7 @@ Goals:
 - [x] User can scroll through a list of movies currently playing in theaters from the Fandango website within the app.
 - [x] User can see theatres near them and select for booking.
 - [x] User can book tickets using the Fandango website within app.
-- [x] User can watch the trailer of the movie selected. from the IMDB website within the app.
+- [x] User can watch the trailer of the movie selected from the IMDB website within the app.
 
 ## Video Walkthrough
 
