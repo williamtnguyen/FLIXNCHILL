@@ -15,7 +15,7 @@ Goals:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/FsP3t1u.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/kj9x88B.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
