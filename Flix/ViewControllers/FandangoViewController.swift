@@ -15,29 +15,21 @@ class FandangoViewController: UIViewController {
     @IBOutlet weak var navBar: UINavigationItem!
     
     
-    var movieTitle = "";
-    var webLoaded = false;
-    var navTitle = "More Info";
-    var movieIMDBid = "";
+    var movieTitle = ""
+    var navTitle = "More Info"
+    var movieIMDBid = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.isHidden = true
-        
+        //self.tabBarController?.tabBar.isHidden = true
         self.navBar.title = navTitle
-        var url = "\(movieTitle) + fandango".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-        url = "https://www.google.com/search?q="+url+"&btnI"
         
-        /*
-        if(movieIMDBid != "") {
-            if(navTitle == "Showtimes & Tickets") {
-                url = "https://m.imdb.com/showtimes/title/\(movieIMDBid)";
-            }
-            if(navTitle == "Watch Trailer") {
-                url = "https://m.imdb.com/title/\(movieIMDBid)";
-            }
-        } */
+        var url = "\(movieTitle) + fandango".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        if navTitle == "Watch Trailer" {
+            url = "\(movieTitle) + IMDB trailer title".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        }
+        url = "https://www.google.com/search?q="+url+"&btnI" //Utilizing Google's I'm Feeling Lucky function
         
         let movieURL = URL(string: url)!
         let urlRequest = URLRequest(url: movieURL)

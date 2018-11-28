@@ -76,7 +76,9 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         if let indexPath = tableView.indexPath(for: cell) {
             let movie = movies[indexPath.row]
             let detailViewController = segue.destination as! DetailViewController
-            detailViewController.movie = movie 
+            detailViewController.movie = movie
+            
+            detailViewController.hidesBottomBarWhenPushed = true
         }
     }
 

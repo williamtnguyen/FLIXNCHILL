@@ -145,7 +145,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Showtimes &amp; Tickets"/>
                                 <connections>
-                                    <segue destination="Uiv-Ge-mBb" kind="show" id="9NW-4d-Hjp"/>
+                                    <segue destination="Uiv-Ge-mBb" kind="show" identifier="toFandango" id="9NW-4d-Hjp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hj6-KE-zcN">
+                                <rect key="frame" x="155" y="163" width="64" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Play-button"/>
+                                <connections>
+                                    <segue destination="Uiv-Ge-mBb" kind="show" identifier="toTrailer" id="ld8-d1-E5m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -262,8 +270,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flix / Tix boi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeE-9J-qd0">
-                                <rect key="frame" x="38" y="127" width="298" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flix / Tix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeE-9J-qd0">
+                                <rect key="frame" x="81" y="125" width="213" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="46"/>
                                 <color key="textColor" red="0.85294555179999998" green="0.43565772330000002" blue="0.4272761914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -381,10 +389,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Play-button" width="211" height="211"/>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="reel_tabbar_icon" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ld8-d1-E5m"/>
         <segue reference="dzj-XD-6u6"/>
     </inferredMetricsTieBreakers>
 </document>

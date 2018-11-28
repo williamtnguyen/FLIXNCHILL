@@ -14,12 +14,13 @@ class Movie {
     var releaseDate: String
     var posterURL: URL!
     var backdropURL: URL!
+    var imdbID: String!
     
     init(dictionary: [String: Any]) {
         title = dictionary["title"] as? String ?? "No title"
         overview = dictionary["overview"] as? String ?? "No overview"
         releaseDate = dictionary["release_date"] as? String ?? "No release date"
-        
+        imdbID = dictionary["imdb_id"] as? String ?? "No IMDB ID" //Via external ID
         
         let baseURLString = "https://image.tmdb.org/t/p/w500"
         

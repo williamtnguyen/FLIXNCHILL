@@ -1,4 +1,4 @@
-# Tix
+# Flix / Tix
 Tix is a movies app using the Fandango API and IMDB API
 
 Goals:
@@ -8,7 +8,7 @@ Goals:
 - [x] User can select the movie for a more detailed view.
 - [x] User can see theatres near them and select for booking.
 - [x] User can book tickets using the Fandango website within app.
-- [ ] User can watch the trailer of the movie selected.
+- [x] User can watch the trailer of the movie selected.
 
 ## Video Walkthrough
 

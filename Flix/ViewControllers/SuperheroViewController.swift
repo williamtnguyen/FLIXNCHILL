@@ -59,7 +59,8 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
         if let indexPath = collectionView.indexPath(for: cell) {
             let movie = movies[indexPath.item]
             let DetailViewController = segue.destination as! DetailViewController
-            DetailViewController.movie = movie 
+            DetailViewController.movie = movie
+            DetailViewController.hidesBottomBarWhenPushed = true
         }
     }
     

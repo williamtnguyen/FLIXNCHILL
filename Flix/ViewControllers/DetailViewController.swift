@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.isHidden = true
+        //self.tabBarController?.tabBar.isHidden = true
         if let movie = movie {
             titleLabel.text = movie.title
             releaseDateLabel.text = movie.releaseDate
@@ -45,12 +45,26 @@ class DetailViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let FandangoViewController = segue.destination as! FandangoViewController;
-        FandangoViewController.navTitle = "Showtimes & Tickets"
-        let movieTitle = movie.title
-        if movieTitle != "" {
-            FandangoViewController.movieTitle = movieTitle ?? "No title" }
-            //FandangoViewController.movieIMDBid = movie!["imdb_id"]! as! String;
+        self.hidesBottomBarWhenPushed = true
+        if segue.identifier == "toFandango" {
+            let FandangoViewController = segue.destination as! FandangoViewController
+            FandangoViewController.navTitle = "Showtimes & Tickets"
+            
+            let movieTitle = movie.title
+            let movie_imdbID = movie.imdbID
+            FandangoViewController.movieTitle = movieTitle ?? "No title"
+            FandangoViewController.movieIMDBid = movie_imdbID! //?? "No IMDB ID"
+        }
+        else if segue.identifier == "toTrailer" {
+            let FandangoViewController = segue.destination as! FandangoViewController
+            FandangoViewController.navTitle = "Watch Trailer"
+            
+            let movieTitle = movie.title
+            let movie_imdbID = movie.imdbID
+            FandangoViewController.movieTitle = movieTitle ?? "No title"
+            FandangoViewController.movieIMDBid = movie_imdbID! //?? "No IMDB ID"
+        }
+        
     }
     
 
