@@ -8,6 +8,7 @@
 
 import UIKit
 import AlamofireImage
+import Parse
 
 class NowPlayingViewController: UIViewController, UITableViewDataSource {
     
@@ -22,6 +23,11 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         //self.navigationItem.title = "Now Playing"
+        if let currentUser = PFUser.current() {
+            //var alertController = UIAlertController(title: "Welcome Back", message: "Welcome Back \(currentUser.username!)", preferredStyle: .alert)
+            self.createAlert(title: "Welcome Back!", message: "We missed you, \(currentUser.username!) 🤑😫")
+        }
+        
         
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(NowPlayingViewController.didPullToRefresh(_:)), for: .valueChanged)
@@ -80,6 +86,13 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
             
             detailViewController.hidesBottomBarWhenPushed = true
         }
+    }
+    
+    func createAlert(title : String, message : String){
+        let Alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        Alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in Alert.dismiss(animated: true, completion: nil)}))
+        Alert.view.tintColor = UIColor.darkGray
+        self.present(Alert, animated: true, completion: nil)
     }
 
 
