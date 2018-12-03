@@ -1,5 +1,5 @@
-# Flix / Tix
-Tix is a movies app that fetches now playing movies from TheMovieDB API 
+# FLIXNCHILL
+"FLIXNCHILL" is a movies app that fetches now playing movies from TheMovieDB API 
 
 Goals:
 - [x] User sees app icon in home screen and styled launch screen.
