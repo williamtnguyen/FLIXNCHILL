@@ -3,7 +3,7 @@
 
 Goals:
 - [x] User sees app icon in home screen and styled launch screen.
-- [x] User can either sign up or login to their own respective account (via Parse as backend, Heroku).
+- [x] User can either sign up or login to their own respective account (via Parse as backend: Heroku, mLab MongoDB).
 - [x] User is greeted with "Welcome Back" alert.
 - [x] User can "Pull to refresh" the movie list.
 - [x] User can select the movie for a more detailed view.
