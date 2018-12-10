@@ -7,9 +7,7 @@ Goals:
 - [x] User is greeted with "Welcome Back" alert.
 - [x] User can "Pull to refresh" the movie list.
 - [x] User can select the movie for a more detailed view.
-- [x] User can scroll through a list of movies currently playing in theaters from the Fandango website within the app.
-- [x] User can see theatres near them and select for booking.
-- [x] User can book tickets using the Fandango website within app.
+- [x] User can see theatres near them playing the respective movie and select for booking via Fandango website.
 - [x] User can watch the trailer of the movie selected from the IMDB website within the app.
 
 ## Video Walkthrough
