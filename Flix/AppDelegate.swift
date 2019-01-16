@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "MovieApp"
-                configuration.clientKey = "427505"
-                configuration.server = "https://blooming-brook-83852.herokuapp.com/parse"
+                configuration.clientKey = "your_password_here"
+                configuration.server = "your_url_here"
             })
         )
         
